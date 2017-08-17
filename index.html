@@ -4,37 +4,74 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <title>Template 2</title>
 
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <title>template 2</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
   </head>
 
   <body>
-    <div class="menu">  
-        <ul>
-            <li>HOME</li>
-            <li>ABOUT</li>
-            <li>WORK</li>
-            <li>TEAM</li>
-            <li>SERVICES</li>
-            <li>FEATURES</li>
-            <li>CONTACT</li>
-        </ul> 
-    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">
+            <img src="images/modest-logo.png" alt="Logo">
+        </a>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">  
+            <ul class="navbar-nav nav-pills nav-justified">
+                <li class="nav-item active"> 
+                    <a class="nav-link" href="#">HOME<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item"> 
+                    <a class="nav-link" href="#">ABOUT<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item"> 
+                    <a class="nav-link" href="#">WORK<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item"> 
+                    <a class="nav-link" href="#">TEAM<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item"> 
+                    <a class="nav-link" href="#">SERVICES<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item"> 
+                    <a class="nav-link" href="#">FEATURES<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item"> 
+                    <a class="nav-link" href="#">CONTACT<span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav> 
 
     <div class="section1">
-        <h1> WELCOME TO OUR MARKETPLACE</h1>
-        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi metus, tristique ndolor non, ornare sagittis dolor. Nulla vestibulu lacus ...</p>
-
-        <div>
-            <button> VIEW MORE</button>
-            <button> VIDEO TOUR</button>
+        <div id="myCarousel" class="carousel slide" data-ride="false">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+             <div class="carousel-inner"> 
+                <div class="active item one"></div>
+                <div class="item two"></div>
+                <div class="item three"></div>
+            </div>
         </div>
-    </div>
 
-    <div class="section2">
+<!-- 
+         <div class=" section1b container">
+            <h1> WELCOME TO OUR MARKETPLACE</h1>
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi metus, tristique ndolor non, ornare sagittis dolor. Nulla vestibulu lacus ...</p>
+    
+            <div>
+                <button> VIEW MORE</button>
+                <button> VIDEO TOUR</button>
+            </div>
+        </div>  -->
+    </div> 
+
+    <!-- <div class="section2">
         <h1>WE ARE MODEST</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi metus, tristique ndolor non, ornare sagittis dolor. Nulla vestibulu lacus sed molestie gravida. Crferm entum  quismagna congue, vel sodales arcu vestibulum. Nunc lobortis dui magna, quis lacusullamcorper at. </p> <p> sollicitudin ante eros ornare, sit amet luctus lorem semper. Suspendisse posuere, quamdictum consectetur, augue metus pharetra tellus, eu feugiatloreg egetnisi. Cras ornare bibendum ante, ut bibendum odio convallis eget. vel sodales arcu vestibulum</p>
 
@@ -61,9 +98,9 @@
             </li>
             </ol>
         </div>
-    </div>
+    </div> -->
 
-    <div class="section3">
+    <!-- <div class="section3">
         <h1>MEET THE TEAM</h1>
         <div class="team1">
             <img src="images/team1.jpg" alt="Team 1">
@@ -88,10 +125,9 @@
             <h4>GLORIA BROMLEY</h4>
             <p>CEO and Founder</p>
         </div>
-    </div>
+    </div> -->
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   </body>
 </html>
