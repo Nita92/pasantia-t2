@@ -1,5 +1,14 @@
+/*  Fix responsiveness :/ */
 
-/*  Navigation Bar */
+* {
+  font-family: "OpenSans";
+}
+
+p {
+    font-size: 12px;
+}
+
+/*  Navigation Bar ============================= */
 .navbar {
     background-color: #1d2126;
     padding: 10px 240px;
@@ -11,7 +20,6 @@
 
 .navbar-nav {
   font-size: 14px;
-  font-family: "OpenSans";
   color: #a4aead;
 }
 
@@ -22,77 +30,66 @@
 
 .navbar-dark .navbar-nav .active>.nav-link {
     color:#23b7a4;
-     border: 1px solid #23b7a4; 
+    border: 1px solid #23b7a4; 
 }
 
 .navbar-dark .navbar-nav .nav-link:hover {
      border: 1px solid #a4aead; 
+     color: #a4aead;
 }
 
-/*  Carousel */
-
-.carousel {
-    position: inherit;
-    z-index: -99; /* keeps this behind all content   */
+/*  Section 1 ================================== */ 
+.section1 {
+    position: relative;
 }
-.carousel .item {
-    position: fixed;  
-    width: 100%;
-    -webkit-transition: opacity 1s;
-    -moz-transition: opacity 1s;
-    -ms-transition: opacity 1s;
-    -o-transition: opacity 1s;
-    transition: opacity 1s;
-    top: 61px;
+
+.section1b {
+    position: absolute;
+    top: 0px;
     left: 0px;
-    padding: 17%;
+    padding: 177px 240px;
+    color: #fff;
 }
 
-.carousel .one {
-    background: url(images/banner1.jpg);
-    background-size: cover;
-    -moz-background-size: cover;
+.btn-outline-primary {
+    border-color: #fff;
+    color: #fff;
+    font-size: 14px;
 }
 
-.carousel .two {
-    background: url(images/banner2.jpg);
-    background-size: cover;
-    -moz-background-size: cover;
+.btn-outline-primary:hover {
+    background-color:#23b7a4;
+    border-color:#23b7a4;
+    cursor: pointer;
 }
 
-.carousel .three {
-    background: url(images/banner.jpg);
-    background-size: cover;
-    -moz-background-size: cover;
+button + button {
+    margin-left: 5px;
 }
 
-.carousel .active.left {
-    left:0;
-    opacity:0;
-    z-index:2;
-}
-
-ol.carousel-indicators li,
-ol.carousel-indicators li.active {
-  margin: 3px;
-  border-radius: 50%;
-  border: 1px solid #fff;
-  width: 10px;
-  height: 10px;
-  padding: 0px;
-  background: transparent;
-}
-
-ol.carousel-indicators li.active {
-  background: #fff;;
+/*  Carousel ================================== */ 
+.carousel-item {
+    height: 500px;
 }
 
 .carousel-indicators {
-    margin-left: 69%;
+    right: 80px;
+    left: auto;
 }
 
-/* sectionb1 */
+.carousel-indicators:hover {
+    cursor: pointer;
+}
 
-/* .section1b {
-    position: absolute;
-} */
+ol.carousel-indicators li { 
+  border: 1px solid #fff;
+  background: transparent;
+  width: 10px;
+  height: 10px;  
+  margin: 3px;
+  border-radius: 50%;
+}
+
+ol.carousel-indicators li.active {
+  background: #fff;
+}
