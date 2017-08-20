@@ -38,7 +38,7 @@ p {
      color: #a4aead;
 }
 
-/*  Section 1 ================================== */ 
+/*  Section 1 ============================= */ 
 .section1 {
     position: relative;
 }
@@ -93,3 +93,67 @@ ol.carousel-indicators li {
 ol.carousel-indicators li.active {
   background: #fff;
 }
+
+/*  Section 2 ============================= */ 
+
+.section2 {
+    padding: 0px 240px;
+}
+
+.section2 h3 {
+    margin: 50px 0px 30px;
+}
+
+.section2 p {
+    color: #8d8f92;
+}
+
+/*  Section 2a */
+.section2a {
+    padding-right: 60px;
+}
+
+.socialmedia div{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    margin: -1.5px; 
+}
+
+.socialmedia .be {
+    margin: -2px -2px; /* analizar esta excepcion */
+}
+
+.socialmedia div:hover {
+    background-color: #d0d5d9;
+    cursor: pointer;
+}
+
+/*  Section 2b */
+.rectangle-list ol {
+counter-reset:li; /* Initiate a counter */
+margin-left:0; 
+padding-left:0; 
+}
+
+.rectangle-list ol > li {
+position: relative;
+list-style:none; /* Disable the normal item numbering */
+}
+
+.rectangle-list h6:before {
+content: counter(li, decimal-leading-zero);
+counter-increment: li;
+position: absolute;	
+left: -2.5em;
+top: 100%;
+margin-top: -1em;
+background: #23b7a4;
+color: #fff;
+height: 2em;
+width: 2em;
+line-height: 2em;
+text-align: center;
+}
+
+/*  Section 3 ============================= */ 
