@@ -8,10 +8,29 @@ p {
     font-size: 12px;
 }
 
+hr {
+    margin-top: 50px;
+}
+
+h3 {
+    margin: 50px 0px 40px;
+}
+
+h3:before {
+    background-color: #e1e6ea;
+    content: "";
+    display: inline-block;
+    position: relative;
+    width: 7px;
+    padding-bottom: 3%;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
 /*  Navigation Bar ============================= */
 .navbar {
     background-color: #1d2126;
-    padding: 10px 240px;
+    padding: 10px 240px; 
 }
 
 .navbar-brand img {
@@ -43,7 +62,7 @@ p {
     position: relative;
 }
 
-.section1b {
+.section1-primary {
     position: absolute;
     top: 0px;
     left: 0px;
@@ -96,20 +115,17 @@ ol.carousel-indicators li.active {
 
 /*  Section 2 ============================= */ 
 
-.section2 {
+.section2,
+.section3 {
     padding: 0px 240px;
-}
-
-.section2 h3 {
-    margin: 50px 0px 30px;
 }
 
 .section2 p {
     color: #8d8f92;
 }
 
-/*  Section 2a */
-.section2a {
+/*  Section 2 primary */
+.section2-primary {
     padding-right: 60px;
 }
 
@@ -118,6 +134,10 @@ ol.carousel-indicators li.active {
     height: 40px;
     width: 40px;
     margin: -1.5px; 
+    background-color: #a4aead;
+    background-position: center center; 
+    background-repeat: no-repeat; 
+    
 }
 
 .socialmedia .be {
@@ -129,7 +149,7 @@ ol.carousel-indicators li.active {
     cursor: pointer;
 }
 
-/*  Section 2b */
+/*  Section 2 secondary */
 .rectangle-list ol {
 counter-reset:li; /* Initiate a counter */
 margin-left:0; 
@@ -157,3 +177,29 @@ text-align: center;
 }
 
 /*  Section 3 ============================= */ 
+
+.card-body {
+    padding: 0.6rem 1rem;
+    background-color: #e1e6ea;
+}
+
+.card {
+    border: none;
+}
+
+.card-img-top {
+    border-top-left-radius: 0rem;
+    border-top-right-radius: 0rem;
+}
+
+.card-title {
+    margin-bottom: 0rem;
+    font-size: .75rem;
+    color: #292f36;
+}
+
+.card-text {
+    font-size: .65rem;
+    color: #8d8f92;
+}
+
