@@ -10,6 +10,7 @@ p {
 
 hr {
     margin-top: 50px;
+    margin-bottom: 0px;
 }
 
 h3 {
@@ -116,7 +117,8 @@ ol.carousel-indicators li.active {
 /*  Section 2 ============================= */ 
 
 .section2,
-.section3 {
+.section3,
+.section4 {
     padding: 0px 240px;
 }
 
@@ -201,5 +203,22 @@ text-align: center;
 .card-text {
     font-size: .65rem;
     color: #8d8f92;
+}
+
+.card-deck div:hover {
+    background-color: #292f36;
+    color: #fff;
+}
+
+
+/*  Section 4 ============================= */ 
+.section4 {
+    background-color: #3a454d;
+    color: white;
+}
+
+.section4 h3 {
+    margin: 0px;
+    padding: 50px 0px 40px;
 }
 
