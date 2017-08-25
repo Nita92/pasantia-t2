@@ -120,7 +120,10 @@ ol.carousel-indicators li.active {
 .section3,
 .section4,
 .section5,
-.section6 {
+.section6,
+.section7,
+.section7-primary,
+footer {
     padding: 0px 240px;
 }
 
@@ -215,7 +218,8 @@ text-align: center;
 
 /*  Section 4 ============================= */ 
 .section4,
-.section6 {
+.section6,
+footer {
     background-color: #3a454d;
     color: white;
 }
@@ -233,6 +237,12 @@ text-align: center;
     margin: 1.5rem 0rem;
 }
 
-.section5 p + p {
+.section5 p + p,
+.section7-primary p + p {
     color: #8d8f92;
+}
+
+/*  Section 7 ============================= */ 
+footer p{
+    margin-bottom: 0px;
 }
