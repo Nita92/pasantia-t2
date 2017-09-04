@@ -1,7 +1,8 @@
 /*  Fix responsiveness :/ */
+/* poner links a botones de social media? */
 
 * {
-  font-family: "OpenSans";
+    font-family: "OpenSans";
 }
 
 p {
@@ -28,10 +29,15 @@ h3:before {
     margin-right: 10px;
 }
 
+.wrapper {
+    width: 70%;
+    margin: 0 auto;
+}
+
 /*  Navigation Bar ============================= */
 .navbar {
     background-color: #1d2126;
-    padding: 10px 240px; 
+    /* padding: 10px 240px;  */
 }
 
 .navbar-brand img {
@@ -136,7 +142,7 @@ footer {
     padding-right: 60px;
 }
 
-.socialmedia div{
+.socialmedia div {
     display: inline-block;
     height: 40px;
     width: 40px;
@@ -147,7 +153,7 @@ footer {
     
 }
 
-.socialmedia .be {
+.section2 .socialmedia .be {
     margin: -2px -2px; /* analizar esta excepcion */
 }
 
@@ -192,6 +198,7 @@ text-align: center;
 
 .card {
     border: none;
+    position: relative;
 }
 
 .card-img-top {
@@ -210,11 +217,33 @@ text-align: center;
     color: #8d8f92;
 }
 
-.card-deck div:hover {
+/* Card Hidden */
+.card-hidden {
+    position: absolute;
+    top: 33%;
+    left: 23%;
+    display: none;
+}
+.card:hover  .card-hidden{
+    display: inline;
+}
+
+.card:hover img{
+    opacity: 0.5;
+}
+.card:hover .card-body,
+.card:hover .card-title {
     background-color: #292f36;
     color: #fff;
 }
 
+.sm-color div {
+    background-color: #3a454d;
+}
+
+.sm-color div:hover{
+    background-color: #4e5a62;
+}
 
 /*  Section 4 ============================= */ 
 .section4,
@@ -243,6 +272,6 @@ footer {
 }
 
 /*  Section 7 ============================= */ 
-footer p{
+footer p {
     margin-bottom: 0px;
 }
