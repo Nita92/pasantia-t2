@@ -37,7 +37,7 @@ h3:before {
 /*  Navigation Bar ============================= */
 .navbar {
     background-color: #1d2126;
-    /* padding: 10px 240px;  */
+    padding: 10px 240px; 
 }
 
 .navbar-brand img {
@@ -328,9 +328,18 @@ form label {
 .btn-primary {
     background-color: #23b7a4;
     border-color: #23b7a4;
+}
     
 /*  Footer ============================= */ 
 
 footer p {
     margin-bottom: 0px;
+}
+
+.sm-icons {
+    text-align: right;
+}
+.sm-icons img{
+    height: 13px;
+    margin: 0.5rem;
 }
