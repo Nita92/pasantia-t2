@@ -217,7 +217,7 @@ text-align: center;
     color: #8d8f92;
 }
 
-/* Card Hidden */
+/* ==== Card Hidden ====*/
 .card-hidden {
     position: absolute;
     top: 33%;
@@ -257,6 +257,38 @@ footer {
 .section6 h3 {
     margin: 0px;
     padding: 50px 0px 40px;
+}
+
+/* === Hidden Elements === */
+
+.plus-icon {
+    position: absolute;
+    top: 34%;
+    left: 48%;
+}
+.description {
+    position: absolute;
+    bottom: 24px;
+    background-color: #292f36;
+    width: 91%;
+}
+
+.description h6 {
+    line-height: 3;
+    margin-left: 1rem;
+    margin-bottom: 0;
+}
+
+.hidden-elements {
+    display: none;
+}
+
+.col-lg-4:hover .hidden-elements{
+    display: inline;
+}
+
+.col-lg-4:hover img{
+    opacity: 0.5;
 }
 
 /*  Section 5 ============================= */ 
