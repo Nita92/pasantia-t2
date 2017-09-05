@@ -304,6 +304,33 @@ footer {
 }
 
 /*  Section 7 ============================= */ 
+
+.section7-primary {
+    height: 200px;
+}
+
+.section7-secondary {
+    position: relative;
+    top: -170px;
+    background-color: #fff;
+    padding: 26px;
+}
+
+.form-control{
+    background-color: #eaeef1;
+    border: none;
+}
+
+form label {
+    color: #8d8f92;
+}
+
+.btn-primary {
+    background-color: #23b7a4;
+    border-color: #23b7a4;
+    
+/*  Footer ============================= */ 
+
 footer p {
     margin-bottom: 0px;
 }
