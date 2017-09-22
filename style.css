@@ -340,7 +340,11 @@ footer {
     padding: 26px;
 }
 
-.form-control {
+.map img {
+    width: 100%;
+}
+
+.form-control{
     background-color: #eaeef1;
     border: none;
 }
@@ -353,10 +357,7 @@ form label {
     background-color: #23b7a4;
     border-color: #23b7a4;
 }
-
-.btn-primary:hover {
     
-}
 /*  Footer ============================= */ 
 
 footer p {
@@ -372,6 +373,6 @@ footer p {
     cursor: pointer;
 }
 
-h2.impotant ~ p {
+/* h2.impotant ~ p {
     color: 
-}
+} */
