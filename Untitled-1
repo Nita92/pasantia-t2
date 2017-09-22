@@ -1,0 +1,10 @@
+.bg {
+  border-radius: 3px;
+  background-color: rgb(234, 238, 241);
+  position: absolute;
+  left: 995px;
+  top: 5049px;
+  width: 495px;
+  height: 159px;
+  z-index: 25;
+}

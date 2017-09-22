@@ -1,7 +1,7 @@
 /*  Fix responsiveness :/ */
 /* poner links a botones de social media? */
 
-* {
+body, h1, h2, h3, h4, h5, h6, p {
     font-family: "OpenSans";
 }
 
@@ -29,9 +29,23 @@ h3:before {
     margin-right: 10px;
 }
 
-.wrapper {
-    width: 70%;
-    margin: 0 auto;
+/*  Icons sizes ============================= */
+
+div[style*="facebook"],
+div[style*="googleplus"] {
+    background-size: 10px;
+}
+
+div[style*="dribble"] {
+    background-size: 14px;
+}
+
+div[style*="twitter"] {
+    background-size: 15px;
+}
+
+div[style*="be"] {
+    background-size: 16px;
 }
 
 /*  Navigation Bar ============================= */
@@ -54,14 +68,17 @@ h3:before {
     margin: 9px 10px;
 }
 
-.navbar-dark .navbar-nav .active>.nav-link {
+.navbar-dark .navbar-nav .active > .nav-link {
     color:#23b7a4;
     border: 1px solid #23b7a4; 
 }
 
+.navbar-dark .navbar-nav .nav-link {
+    border: 1px solid transparent; 
+    color: #a4aead;
+}
 .navbar-dark .navbar-nav .nav-link:hover {
-     border: 1px solid #a4aead; 
-     color: #a4aead;
+     border-color: #a4aead;
 }
 
 /*  Section 1 ============================= */ 
@@ -144,8 +161,8 @@ footer {
 
 .socialmedia div {
     display: inline-block;
-    height: 40px;
-    width: 40px;
+    height: 35px;
+    width: 35px;
     margin: -1.5px; 
     background-color: #a4aead;
     background-position: center center; 
@@ -220,10 +237,13 @@ text-align: center;
 /* ==== Card Hidden ====*/
 .card-hidden {
     position: absolute;
-    top: 33%;
-    left: 23%;
     display: none;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translateY(-50%) translateX(-50%);
 }
+
 .card:hover  .card-hidden{
     display: inline;
 }
@@ -257,6 +277,10 @@ footer {
 .section6 h3 {
     margin: 0px;
     padding: 50px 0px 40px;
+}
+
+.image-fluid {
+    width: 100%;
 }
 
 /* === Hidden Elements === */
@@ -316,7 +340,7 @@ footer {
     padding: 26px;
 }
 
-.form-control{
+.form-control {
     background-color: #eaeef1;
     border: none;
 }
@@ -329,7 +353,10 @@ form label {
     background-color: #23b7a4;
     border-color: #23b7a4;
 }
+
+.btn-primary:hover {
     
+}
 /*  Footer ============================= */ 
 
 footer p {
@@ -339,7 +366,12 @@ footer p {
 .sm-icons {
     text-align: right;
 }
-.sm-icons img{
+.sm-icons img {
     height: 13px;
     margin: 0.5rem;
+    cursor: pointer;
+}
+
+h2.impotant ~ p {
+    color: 
 }
